@@ -6,9 +6,9 @@ body {
   flex-direction: column;
 }
 
-/* ====================== */
-/* HEADER ELEMENTS */
-/* ====================== */
+/* ==================================*/
+/*         HEADER ELEMENTS */
+/* ==================================*/
 
 header {
   background: #1f2937;
@@ -20,17 +20,20 @@ header {
 header h3 {
   color: #f9faf8;
   font-size: 24px;
+  /* padding: 16px; */
 }
 
 header img {
   height: auto;
   width: 100px;
   border-radius: 25%;
+  /* padding-right: 100px */
 }
 
 h1 {
   color: #f9faf8;
   font-weight: bolder;
+  padding: 100px;
 }
 
 /* LINK FORMATTING */
@@ -53,26 +56,29 @@ a {
   flex: 1 0 auto;
   display: flex;
   flex-direction: column;
+  margin: 0 100px;
 } */
 
-/* ====================== */
-/* SUB-HEADER ELEMENTS */
-/* ====================== */
+/* ================================== */
+/*       SUB-HEADER ELEMENTS */
+/* ==================================*/
 
 .sub-header {
   display: flex;
-  justify-content: space-between;
+  padding: 16px 100px;
+  /* justify-content: space-between; */
+  /* flex-direction: column; */
+
+  background-color: #1f2937;
   /* align-items: flex-start; */
   /* padding: 100px */
-
 }
 
 .sub-header img {
   height: auto;
-  width: 350px;
+  width: 300px;
   border-radius: 50%;
 }
-
 
 .sub-header p {
   color: #e5e7eb;
@@ -83,21 +89,37 @@ a {
   font-size: 18px;
 }
 
-.sub-header {
-  background-color: #1f2937;
+/* ================================== */
+/*       CONTENT & PICTURES */
+/* ==================================*/
+
+h2 {
+  text-align: center;
+  padding: 16px;
 }
 
 .content {
-  /* display: flex;
-  flex: 1; */
-  /* border: blue 1px solid; */
+  display: flex;
+  flex-wrap: wrap;
+  padding: 25px 100px;
+
+  justify-content: center;
+  gap: 50px;
 }
 
 .content img {
   height: auto;
-  width: 300px;
-  border: #3882f6 solid 4px;
+  width: 200px;
+  border: #3881f6d0 solid 4px;
   border-radius: 10%;
+}
+
+.card-1, .card-2, .card-3, .card-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
 }
 
 .quote {
@@ -105,13 +127,14 @@ a {
   font-style: italic;
   font-size: 36px;
   color: #1f2937;
+  padding: 16px 100px;
 
-  /* display: flex;
-  flex: 1 */
+  display: flex;
+  justify-content: center;
 }
 
 button {
-  background: #3882f6;
+  background: #3881f6e7;
   border: none;
   color: #e5e7eb;
   border-radius: 10%;
