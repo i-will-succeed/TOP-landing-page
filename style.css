@@ -15,12 +15,12 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 16px 100px;
+  flex-wrap: wrap;
 }
 
 header h3 {
   color: #f9faf8;
   font-size: 24px;
-  /* padding: 16px; */
 }
 
 header img {
@@ -33,10 +33,15 @@ header img {
 h1 {
   color: #f9faf8;
   font-weight: bolder;
-  padding: 100px;
+  flex: 1;
+  padding: 16px;
+  font-size: 24px;
 }
 
-/* LINK FORMATTING */
+/* ==================================*/
+/*         LINK FORMATTING */
+/* ==================================*/
+
 ul {
   padding: 0;
   margin: 0;
@@ -52,32 +57,23 @@ a {
   text-decoration: none;
 }
 
-/* .holy-grail-body {
-  flex: 1 0 auto;
-  display: flex;
-  flex-direction: column;
-  margin: 0 100px;
-} */
-
 /* ================================== */
 /*       SUB-HEADER ELEMENTS */
 /* ==================================*/
 
 .sub-header {
   display: flex;
-  padding: 16px 100px;
-  /* justify-content: space-between; */
-  /* flex-direction: column; */
-
+  padding: 100px 100px;
   background-color: #1f2937;
-  /* align-items: flex-start; */
-  /* padding: 100px */
+  align-items: flex-start;
+  justify-content:center;
+  flex-direction: column;
 }
 
-.sub-header img {
-  height: auto;
-  width: 300px;
-  border-radius: 50%;
+.sub-header h2 {
+  color: #f9faf8;
+  font-size: 48px;
+  margin: 0;
 }
 
 .sub-header p {
@@ -89,6 +85,11 @@ a {
   font-size: 18px;
 }
 
+.sub-header img {
+  height: auto;
+  width: 300px;
+  border-radius: 10%;
+}
 /* ================================== */
 /*       CONTENT & PICTURES */
 /* ==================================*/
@@ -102,7 +103,6 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   padding: 25px 100px;
-
   justify-content: center;
   gap: 50px;
 }
@@ -112,15 +112,23 @@ h2 {
   width: 200px;
   border: #3881f6d0 solid 4px;
   border-radius: 10%;
+
+  
 }
 
-.card-1, .card-2, .card-3, .card-4 {
+.card-1,
+.card-2,
+.card-3,
+.card-4 {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
 }
+
+/* ==================================*/
+/*       QUOTE/TESTIMONIALS */
+/* ==================================*/
 
 .quote {
   background-color: #e5e7eb;
