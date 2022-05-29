@@ -2,9 +2,13 @@
 /*         MAIN BODY */
 /* ==================================*/
 
+* {
+  /* border: firebrick 1px solid; */
+}
+
 body {
   font-family: Roboto, sans-serif;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -44,33 +48,41 @@ body {
   display: flex;
   padding: 100px 100px;
   background-color: #1f2937;
-  align-items: flex-start;
   flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 1rem;
 }
 
-.main .header {
+.main .headers {
   color: #f9faf8;
   font-size: 48px;
   margin: 0;
   padding: 0;
+
+  /* flex: 1; */
 }
 
 .main .text {
   color: #e5e7eb;
-  width: 500px;
-
+  max-width: 500px;
+  line-height: 125%;
 }
 
 .main .image {
   height: auto;
-  width: 300px;
-  display: flex;
-  /* flex-direction: column; */
-  align-self: center;
-  justify-content: center;
-  
+  width: 400px;
   border-radius: 10%;
+
+  /* flex: 0; */
 }
+
+.main button {
+  margin-top: 1rem;
+}
+
 /* ================================== */
 /*       CONTENT & PICTURES */
 /* ==================================*/
@@ -90,8 +102,8 @@ body {
 
 .content .image {
   height: auto;
-  width: 200px;
-  border: #3881f6d0 solid 4px;
+  max-width: 250px;
+  border: #3882f6e6 solid 4px;
   border-radius: 10%;
 }
 
@@ -117,37 +129,29 @@ body {
   padding: 16px 100px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 /* ==================================*/
 /*            SIGN-UP */
 /* ==================================*/
 
-.sign-up {
+.sign-up-wrapper {
   display: flex;
+  padding: 4rem 100px;
+  justify-content: center;
+}
+
+.sign-up-box {
+  background: #3882f6e6;
   color: #f9faf8;
-  background: #3881f6d0;
-  border: red 2px solid;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 8px;
-
-  padding: 32px;
-  margin: 100px;
-  /* box-sizing: border-box; */
-
+  padding: 3rem;
+  border-radius: 25px;
 }
 
-.sign-up .headers {
-  margin: 0;
-}
-
-.sign-up .text {
-  margin: 0;
-}
-
-.sign-up button {
-  border: #f9faf8;
+.sign-up-box button {
+  border: #f9faf8 1px solid;
+  background: #3882f600;
 }
 
 /* ==================================*/
@@ -175,11 +179,11 @@ a {
 }
 
 button {
-  background: #3881f6d0;
+  background: #3882f6e6;
   border: none;
   color: #e5e7eb;
-  border-radius: 5%;
-  padding: 10px 25px;
+  border-radius: 8px;
+  padding: 12px 25px;
   font-weight: 900;
 }
 
