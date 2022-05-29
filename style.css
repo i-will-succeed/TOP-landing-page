@@ -26,7 +26,6 @@ body {
   height: auto;
   width: 100px;
   border-radius: 25%;
-  /* padding-right: 100px */
 }
 
 .header .main-header {
@@ -35,30 +34,6 @@ body {
   flex: 1;
   padding: 16px;
   font-size: 24px;
-}
-
-/* ==================================*/
-/*         LINK FORMATTING */
-/* ==================================*/
-
-.header-link {
-  color: #e5e7eb;
-  font-size: 18px;
-}
-
-ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  text-decoration: none;
-  display: flex;
-  gap: 16px;
-}
-
-a:hover,
-a {
-  color: black;
-  text-decoration: none;
 }
 
 /* ================================== */
@@ -70,7 +45,6 @@ a {
   padding: 100px 100px;
   background-color: #1f2937;
   align-items: flex-start;
-  justify-content: center;
   flex-direction: column;
 }
 
@@ -83,11 +57,18 @@ a {
 
 .main .text {
   color: #e5e7eb;
+  width: 500px;
+
 }
 
 .main .image {
   height: auto;
   width: 300px;
+  display: flex;
+  /* flex-direction: column; */
+  align-self: center;
+  justify-content: center;
+  
   border-radius: 10%;
 }
 /* ================================== */
@@ -149,14 +130,12 @@ a {
   border: red 2px solid;
   flex-direction: column;
   align-items: flex-start;
-
   gap: 8px;
 
   padding: 32px;
-  margin: 0;
-  width: 1000px;
-  /* flex: 1; */
-  /* flex-wrap: wrap; */
+  margin: 100px;
+  /* box-sizing: border-box; */
+
 }
 
 .sign-up .headers {
@@ -166,9 +145,33 @@ a {
 .sign-up .text {
   margin: 0;
 }
+
 .sign-up button {
   border: #f9faf8;
-  /* flex: 1 */
+}
+
+/* ==================================*/
+/*    LINK FORMATTING & BUTTONS*/
+/* ==================================*/
+
+.header-link {
+  color: #e5e7eb;
+  font-size: 18px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  gap: 16px;
+}
+
+a:hover,
+a {
+  color: black;
+  text-decoration: none;
 }
 
 button {
