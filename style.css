@@ -1,5 +1,5 @@
 /* ==================================*/
-/*         MAIN BODY */
+/*         MAIN BODY/CONTAINER */
 /* ==================================*/
 
 * {
@@ -10,6 +10,11 @@ body {
   font-family: Roboto, sans-serif;
   min-height: 100vh;
   margin: 0;
+  text-align: center;
+  
+}
+
+.container {
   display: flex;
   flex-direction: column;
 }
@@ -24,6 +29,7 @@ body {
   justify-content: space-between;
   padding: 16px 100px;
   flex-wrap: wrap;
+  text-align: left; 
 }
 
 .header .logo {
@@ -47,12 +53,12 @@ body {
 .main {
   display: flex;
   padding: 100px 100px;
+  text-align: left;
   background-color: #1f2937;
   flex-direction: column;
-
+  
   align-items: center;
   justify-content: center;
-
   gap: 1rem;
 }
 
@@ -62,7 +68,6 @@ body {
   margin: 0;
   padding: 0;
 
-  /* flex: 1; */
 }
 
 .main .text {
@@ -71,16 +76,15 @@ body {
   line-height: 125%;
 }
 
-.main .image {
+.main img {
   height: auto;
   width: 400px;
   border-radius: 10%;
-
-  /* flex: 0; */
 }
 
 .main button {
   margin-top: 1rem;
+  border: none;
 }
 
 /* ================================== */
@@ -136,22 +140,28 @@ body {
 /*            SIGN-UP */
 /* ==================================*/
 
-.sign-up-wrapper {
-  display: flex;
+.sign-up-box{
   padding: 4rem 100px;
-  justify-content: center;
-}
-
-.sign-up-box {
   background: #3882f6e6;
   color: #f9faf8;
-  padding: 3rem;
+  padding: 2rem;
   border-radius: 25px;
+  margin: 50px 100px;
+  display: flex;
+
 }
 
-.sign-up-box button {
-  border: #f9faf8 1px solid;
+.sign-up-text {
+  align-items: flex-start;
+  flex: 2;
+  text-align: left;
+}
+
+.sign-up-button {
   background: #3882f600;
+  flex: 1;
+  align-self: center;
+  width: 250px;
 }
 
 /* ==================================*/
@@ -180,11 +190,18 @@ a {
 
 button {
   background: #3882f6e6;
-  border: none;
+  border: white 1px solid;
   color: #e5e7eb;
   border-radius: 8px;
   padding: 12px 25px;
   font-weight: 900;
+}
+
+button:hover {
+  cursor: pointer;
+  background: #0043acf0;
+  color: white;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 /* ==================================*/
