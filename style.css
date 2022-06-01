@@ -2,16 +2,11 @@
 /*         MAIN BODY/CONTAINER */
 /* ==================================*/
 
-* {
-  /* border: firebrick 1px solid; */
-}
-
 body {
   font-family: Roboto, sans-serif;
   min-height: 100vh;
   margin: 0;
   text-align: center;
-  
 }
 
 .container {
@@ -29,7 +24,7 @@ body {
   justify-content: space-between;
   padding: 16px 100px;
   flex-wrap: wrap;
-  text-align: left; 
+  text-align: left;
 }
 
 .header .logo {
@@ -52,39 +47,38 @@ body {
 
 .main {
   display: flex;
-  padding: 100px 100px;
+  padding: 25px 100px;
+  padding-bottom: 100px;
   text-align: left;
   background-color: #1f2937;
-  flex-direction: column;
-  
   align-items: center;
-  justify-content: center;
-  gap: 1rem;
+  justify-content: space-between;
+  gap: 75px;
 }
 
-.main .headers {
+.main h2 {
   color: #f9faf8;
   font-size: 48px;
   margin: 0;
   padding: 0;
-
 }
 
-.main .text {
+.main p {
   color: #e5e7eb;
-  max-width: 500px;
-  line-height: 125%;
-}
 
-.main img {
-  height: auto;
-  width: 400px;
-  border-radius: 10%;
+  line-height: 125%;
+  flex: 1;
 }
 
 .main button {
-  margin-top: 1rem;
   border: none;
+}
+
+.main img {
+  flex: 2;
+  height: auto;
+  width: 400px;
+  border-radius: 10%;
 }
 
 /* ================================== */
@@ -140,7 +134,7 @@ body {
 /*            SIGN-UP */
 /* ==================================*/
 
-.sign-up-box{
+.sign-up-box {
   padding: 4rem 100px;
   background: #3882f6e6;
   color: #f9faf8;
@@ -148,13 +142,13 @@ body {
   border-radius: 25px;
   margin: 50px 100px;
   display: flex;
-
 }
 
 .sign-up-text {
   align-items: flex-start;
   flex: 2;
   text-align: left;
+  line-height: 125%;
 }
 
 .sign-up-button {
@@ -201,7 +195,8 @@ button:hover {
   cursor: pointer;
   background: #0043acf0;
   color: white;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 /* ==================================*/
